@@ -1,0 +1,29 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>Drawer content</mat-drawer>
+  <mat-drawer-content>Main content</mat-drawer-content>
+</mat-drawer-container>
+<h4>Basic mat-select</h4>
+<mat-form-field>
+  <mat-select placeholder="Favorite food">
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      真漂亮
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<h4>Basic native select</h4>
+<mat-form-field>
+  <select matNativeControl required>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+</mat-form-field>
+<mat-radio-group>
+  <mat-radio-button value="1">Option 1</mat-radio-button>
+  <mat-radio-button value="2">Option 2</mat-radio-button>
+</mat-radio-group>
+<button mat-button color="primary">Primary</button>
+<button mat-button color="accent">Accent</button>
+<button mat-button color="warn">Warn</button>
