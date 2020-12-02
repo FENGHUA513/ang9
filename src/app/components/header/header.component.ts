@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-
+import { stringifyQS } from '../../../utils/main'
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,5 +8,7 @@ import { Component, OnInit } from '@angular/core'
 export class HeaderComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.error(stringifyQS({ a: 1, b: 2 }))
+  }
 }
